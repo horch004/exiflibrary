@@ -58,7 +58,7 @@ namespace ExifLibrary
         /// <param name="stream">A stream that contains image data.</param>
         /// <param name="encoding">The encoding to be used for text metadata when the source encoding is unknown.</param>
         /// <param name="readTrailingData">Whether to read data beyond the EOI (end of image) marker.</param>
-        protected internal JPEGFile(MemoryStream stream, Encoding encoding, bool readTrailingData = false)
+        protected internal JPEGFile(MemoryStream stream, Encoding encoding, bool readTrailingData = true)
         {
             Format = ImageFileFormat.JPEG;
             Sections = new List<JPEGSection>();
